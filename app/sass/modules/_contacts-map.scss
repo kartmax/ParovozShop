@@ -1,0 +1,103 @@
+.cont_maps {
+  background: url("../img/bg-contacts.jpg") center center no-repeat;
+  background-size: cover;
+
+  .gm-style .gm-style-cc span, .gm-style .gm-style-cc a, .gm-style .gm-style-mtc div {
+    display: none;
+  }
+
+  .row {
+    position: relative;
+    max-width: 1180px;
+    display: flex;
+    margin: auto;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+
+    .contact {
+      flex: 1 50%;
+      background-color: #f8f7f8;
+      padding: 60px 110px;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+
+      .line {
+        width: calc(50% - 15px);
+      }
+
+      .capt {
+        color: #1c1e2b;
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 15px;
+      }
+
+      .row-tell {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: stretch;
+
+        i {
+          opacity: 0.62;
+          color: #c5a059;
+          font-size: 24px;
+          font-weight: 400;
+          line-height: 22px;
+          margin-right: 20px;
+          padding-top: 10px;
+        }
+
+        .num {
+          color: #1c1e2b;
+          font-family: "Open Sans";
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 24px;
+
+          p {
+            margin-top: 10px;
+          }
+        }
+      }
+    }
+    #map {
+      flex: 1 50%;
+    }
+  }
+
+  .border-left {
+    position: absolute;
+    left: calc(50% + 7px);
+    bottom: 7px;
+    height: calc(100% - 14px);
+    width: 1px;
+    border: 1px solid $btn-text-color;
+  }
+  .border-right {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    height: calc(100% - 14px);
+    width: 1px;
+    border: 1px solid $btn-text-color;
+  }
+  .border-top {
+    position: absolute;
+    right: 7px;
+    top: 7px;
+    width: calc(50% - 14px);
+    height: 1px;
+    border: 1px solid $btn-text-color;
+  }
+  .border-bottom {
+    position: absolute;
+    right: 7px;
+    bottom: 7px;
+    width: calc(50% - 14px);
+    height: 1px;
+    border: 1px solid $btn-text-color;
+  }
+}

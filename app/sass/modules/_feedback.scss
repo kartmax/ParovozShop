@@ -1,0 +1,67 @@
+.feedback {
+  background-color: #f8f7f8;
+
+  .wrapen {
+    max-width: 540px;
+
+    form {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      margin: -15px;
+      opacity: 0.75;
+      color: #1c1e2b;
+      font-family: "Open Sans";
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+
+      input {
+        margin: 15px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #000;
+        opacity: 0.75;
+        outline: none;
+        flex: 1 44%;
+
+        &:focus {
+          border-color: $btn-text-color;
+        }
+      }
+      textarea {
+        margin: 15px 15px 44px 15px;
+        background: none;
+        border: none;
+        border-bottom: 1px solid #000;
+        opacity: 0.75;
+        outline: none;
+        flex: 1 100%;
+
+        &:focus {
+          border-color: $btn-text-color;
+        }
+      }
+    }
+  }
+}
+
+.thank-for-message {
+  display: none;
+  background: #f8f7f8;
+
+  .capt {
+    font-weight: bold;
+    font-size: 20px;
+    color: $btn-text-color;
+    text-transform: uppercase;
+  }
+  img {
+    margin: 45px 0 40px;
+  }
+  .text {
+    font-size: 18px;
+    color: #1c1e2b;
+  }
+}

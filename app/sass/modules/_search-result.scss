@@ -1,0 +1,128 @@
+.search-result.vertic_padd {
+  background: url("../img/bg_catalog.jpg") center center no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-left: 0px;
+  padding-right: 0px;
+
+  .wrapen {
+    max-width: 1290px;
+    align-items: center;
+
+    form, p {
+      z-index: 2;
+    }
+
+    form {
+      width: calc(100% - 90px);
+      margin: 0 15px;
+      display: flex;
+      flex-flow: nowrap;
+      align-items: center;
+      margin-bottom: 34px;
+
+      @media only screen and (max-width : 580px) {
+        width: calc(100% - 60px);
+      }
+
+      input {
+        width: 100%;
+        height: 50px;
+        border: 1px solid #1c1e2b;
+        padding: 0 80px 0 30px;
+        color: #1c1e2b;
+        font-size: 14px;
+        font-weight: 400;
+        outline: none;
+      }
+      a {
+        margin-left: -50px;
+      }
+    }
+
+    .text-info {
+      width: calc(100% - 60px);
+      text-align: left;
+
+      @media only screen and (max-width : 580px) {
+        width: calc(100% - 30px);
+        padding-right: 15px;
+      }
+    }
+
+    .text-resault {
+      color: #757575;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 26px;
+      margin-bottom: 40px;
+      margin-left: 15px;
+      text-align: left;
+    }
+    .text-empty {
+      color: #1c1e2b;
+      font-size: 16px;
+      font-weight: 700;
+      margin-left: 15px;
+    }
+
+    .result {
+      display: flex;
+      width: calc(100% - 60px);
+      flex-flow: row wrap;
+      align-items: stretch;
+      justify-content: flex-start;
+
+      @media only screen and (max-width : 1540px) {
+        padding-left: 30px;
+        padding-right: 30px;
+      }
+      @media only screen and (max-width : 580px) {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .item-result {
+        position: relative;
+        width: 22.5%;
+        margin: 15px;
+        padding: 55px 14px;
+        display: flex;
+        flex-flow: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-shadow: 0 3px 7px rgba(226, 226, 228, 0.35);
+        border-radius: 3px;
+        background-color: #f8f7f8;
+        text-align: left;
+        z-index: 2;
+
+        .angle {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        .capt {
+          color: #1c1e2b;
+          font-size: 16px;
+          font-weight: 700;
+          margin-bottom: 29px;
+        }
+        .text {
+          color: #757575;
+          font-family: "Open Sans";
+          font-size: 13px;
+          font-weight: 400;
+          line-height: 23px;
+        }
+      }
+    }
+
+    .catalog {
+      z-index: 2;
+      background: none;
+      padding: 0;
+    }
+  }
+}

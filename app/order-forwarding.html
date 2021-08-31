@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+
+    <title>order-forwarding</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+    <link rel="stylesheet" href="css/app.min.css">
+
+    <meta name="theme-color" content="#000">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#000">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+    <!-- Custom Browsers Color End -->
+</head>
+
+<body>
+
+<header class="second">
+    <div class="bg_img">
+        <img src="img/bg_order-forwarding.jpg" alt="">
+    </div>
+    <div class="top-header bar-equip-top-head">
+        <div class="left">
+            <a class="menu-btn on_btn">
+                <div class="line">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <span class="title">Меню</span>
+            </a>
+            <a href="#form-search" class="search"><img src="img/search-bg.png" alt=""></a>
+
+            <div class="hidden">
+                <form action="" id="form-search" class="popup-search">
+                    <img class="bg_img_form" src="img/search/bg_search.jpg" alt="">
+                    <input type="text" name="search" placeholder="Поиск">
+                    <a href="" class="btn-form-search"><img src="img/search-bg.png" alt=""></a>
+                </form>
+            </div>
+        </div>
+        <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+        <div class="right">
+            <a href="basket-empty.html" class="cart">
+                <span class="title">Корзина</span>
+                <img src="img/shopping-cart.png" alt="">
+            </a>
+        </div>
+    </div>
+    <div class="menu off">
+        <div class="border_left"></div>
+        <div class="border-right"></div>
+        <div class="border-bottom"></div>
+        <div class="border_top"></div>
+        <a class="close">
+            <i class="fa fa-times" aria-hidden="true"></i>
+        </a>
+        <div class="top-menu">
+            <div class="menu-title">
+                <p>Меню</p>
+                <div class="title-line">
+                    <div class="line"></div>
+                    <div class="circle"></div>
+                    <div class="line"></div>
+                </div>
+            </div>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="forUs.html">О нас</a></li>
+                <li><a href="bar-equipment.html">барное оборудования</a></li>
+                <li><a href="books.html">книги</a></li>
+                <li><a href="gifts.html">подарочные предложение</a></li>
+                <li><a href="delivery.html">доставка и оплата</a></li>
+                <li><a href="contacts.html">контакты</a></li>
+            </ul>
+        </div>
+        <div class="social">
+            <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+    </div>
+
+    <div class="text_head">
+        <p class="caption">Оформление заказа</p>
+        <div class="way">
+            <a href="index.html" class="notes">главный </a>
+            <p class="notes">-</p>
+            <a href="order-forwarding.html" class="notes"> оформление заказа</a>
+        </div>
+        <div class="title-line">
+            <div class="line"></div>
+            <div class="circle"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</header>
+
+<main>
+    <div class="basket-full vertic_padd">
+        <div class="wrapen">
+            
+            <div class="order-forward">
+                <form action="" class="requisites">
+                    <p>Платежные реквизиты</p>
+                    <input type="text" name="name" placeholder="Имя *">
+                    <input type="text" name="surname" placeholder="Фамилия *">
+                    <input type="text" name="name_company" placeholder="Название компании *">
+                    <input type="email" name="email" placeholder="Адрес электронной почты *">
+                    <input type="tel" name="phone" placeholder="Телефон *">
+                    <select name="country" id="select-order" data-placeholder="Страна">
+                        <option></option>
+                        <option value="ukr">Украина</option>
+                        <option value="ru">Россия</option>
+                        <option value="usa">США</option>
+                    </select>
+                    <input type="text" name="address" placeholder="Адрес *">
+                    <input type="text" name="city" placeholder="Город *">
+                    <input type="text" name="country-2" placeholder="Государство / Страна*">
+                    <input type="text" name="index" placeholder="Индекс / ZIP *">
+
+                </form>
+                <div class="add-info">
+                    <p class="info">Дополнительная информация</p>
+                    <textarea name="notes" id="" cols="20" rows="4" placeholder="Примечания заказа"></textarea>
+                    <p>Оплата</p>
+                    <form action="" class="pay-method">
+                        <input type="radio" name="payment method" value="cash" id="cash" class="styler">
+                        <label for="cash"><p>Наличными</p></label>
+                        <br>
+                        <input type="radio" name="payment method" value="clearing" id="clearing">
+                        <label for="clearing"><p>Безналичными</p></label>
+                        <br>
+                        <input type="radio" name="payment method" value="Visa/MasterCard" id="Visa/MasterCard">
+                        <label for="Visa/MasterCard"><p>Visa/MasterCard</p></label>
+                    </form>
+
+                </div>
+            </div>
+
+            <div class="full">
+                <table>
+                    <tr class="capt">
+                        <th>Товар</th>
+                        <th></th>
+                        <th>Количество</th>
+                        <th id="weight">Вес</th>
+                        <th>Сума</th>
+                        <th>Удалить</th>
+                        <th class="close-basket">
+                            <a>
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </th>
+                    </tr>
+                    <tr>
+                        <td class="img"><img src="img/img-basket-1.png" alt=""></td>
+                        <td class="description">
+                            <p class="articul">Артикул: SHCZ45r/900</p>
+                            <p>Коктейльный шейкер Калабрезе</p>
+                        </td>
+                        <td>
+                            <form action="" class="form-quant">
+                                <input type="number" class="quant" min="1" value="1">
+                            </form>
+                        </td>
+                        <td class="weight"><p>469 грамм</p></td>
+                        <td class="sum">2,518<sup>.40</sup> <span>₴</span></td>
+                        <td>
+                            <a class="delete-row">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="img"><img src="img/img-basket-2.png" alt=""></td>
+                        <td class="description">
+                            <p class="articul">Артикул: SHCZ45r/900</p>
+                            <p>Современный сетчатый фильтр
+                                розовое золото</p>
+                        </td>
+                        <td>
+                            <form action="" class="form-quant">
+                                <input type="number" class="quant" min="1" value="1">
+                            </form>
+                        </td>
+                        <td class="weight"><p>469 грамм</p></td>
+                        <td class="sum">1,144<sup>.72</sup> <span>₴</span></td>
+                        <td>
+                            <a class="delete-row">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="img"><img src="img/img-basket-3.png" alt=""></td>
+                        <td class="description">
+                            <p class="articul">Артикул: SHCZ45r/900</p>
+                            <p>Делюкс ледорубом 3 лопасти</p>
+                        </td>
+                        <td>
+                            <form action="" class="form-quant">
+                                <input type="number" class="quant" min="1" value="1">
+                            </form>
+                        </td>
+                        <td class="weight"><p>469 грамм</p></td>
+                        <td class="sum">486<sup>.50</sup> <span>₴</span></td>
+                        <td>
+                            <a class="delete-row">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td class="img"><img src="img/img-basket-4.png" alt=""></td>
+                        <td class="description">
+                            <p class="articul">Артикул: SHCZ45r/900</p>
+                            <p>Джиггер Миссис Слим, нерж</p>
+                        </td>
+                        <td>
+                            <form action="" class="form-quant">
+                                <input type="number" class="quant" min="1" value="1">
+                            </form>
+                        </td>
+                        <td class="weight"><p>469 грамм</p></td>
+                        <td class="sum">2,000<sup>.00</sup> <span>₴</span></td>
+                        <td>
+                            <a class="delete-row">
+                                <i class="fa fa-times" aria-hidden="true"></i>
+                            </a>
+                        </td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="order">
+                <div class="frame">
+                    <div class="pay-variant">
+                        <p class="text">Способ оплаты: </p>
+                        <p class="carta">Visa/MasterCard</p>
+                    </div>
+                    <div class="totals">
+                        <p class="text">ОБЩАЯ СУММА:</p>
+                        <p class="sum">6,149<sup>.62</sup> ₴</p>
+                    </div>
+                    <a href="" class="base-link">Оплатить товар</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="title-line">
+        <div class="line"></div>
+        <div class="circle"></div>
+        <div class="line"></div>
+    </div>
+    <div class="wrap_foot">
+        <div class="info">
+            <p class="year_company"><span>© 2017,</span> parovoz shop.</p>
+            <p class="protect">Все права защищены.</p>
+        </div>
+        <div class="social">
+            <a href="#" class="base-link"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="base-link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#" class="base-link"><i class="fa fa-vk" aria-hidden="true"></i></a>
+            <a href="#" class="base-link"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+        </div>
+        <div class="done">
+            <div class="wrap-done">
+                <img src="img/dizz.png" alt="">
+                <a href="http://dizz.in.ua/ru">Сделано в Dizz Agency</a>
+            </div>
+        </div>
+    </div>
+
+    <p id="back-top">
+        <a href=""><img src="img/up-arrow.png" alt=""></a>
+    </p>
+
+</footer>
+
+<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
